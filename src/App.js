@@ -1,15 +1,20 @@
 import Main from './components/Main'
+import Footer from './components/Footer'
+import Login from './page/Login'
+import Signup from './page/Signup'
+import {Switch, Route} from 'react-router-dom' // 
 import './App.css';
 import {useState, useEffect} from 'react'
 
 function App() {
 
-  const [userInfo, setUserInfo] = useState('유저의 정보')
-  const [loginPass, setLoginPass] = useState('가입 완료된 유저')
-
   return (
-    <div className="App">
-      <Main loginPass={loginPass} userInfo={userInfo}/>
+    <div>
+      <Switch>
+        <Route exact path="/" component={Main} />
+        <Route path="/login" component={Login} />
+        <Route path="/signup" component={Signup} />
+      </Switch>
     </div>
   );
 }

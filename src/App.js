@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import Main from './components/Main'
 import './App.css';
+import {useState, useEffect} from 'react'
 
 function App() {
+
+  const [userInfo, setUserInfo] = useState('유저의 정보')
+  const [loginPass, setLoginPass] = useState('가입 완료된 유저')
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Main loginPass={loginPass} userInfo={userInfo}/>
     </div>
   );
 }

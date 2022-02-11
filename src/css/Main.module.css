@@ -1,0 +1,40 @@
+div {
+  box-sizing: border-box;
+}
+
+input, button {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.iphone {
+  min-width: 20%;
+  height: 450px;
+  margin-left:60%;
+}
+
+.iphoneText {
+  color: white;
+  margin-top: 30px;
+  font-size: 10px;
+}
+
+.topContainer {
+  display: flex;
+  background: linear-gradient(rgb(128, 184, 244),#4f6bf9 );
+}
+
+.iphoneBtn {
+  color:white;
+  width: 80px;
+  font-size: 10px;
+  height: 30px;
+  border:none;
+  border-radius: 5px;
+  background-color: rgb(77, 77, 77);
+  
+}
